@@ -1,38 +1,105 @@
+html{
+    overflow: hidden !important;
+}
+
 .App {
-  text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar{
+width: 20vw;
+height: 150vh;
+/* display: flex;
+flex-direction: column; */
+position: relative;
+/* align-items: center !important;
+justify-content: center !important; */
+}
+.textbox{
+    text-align: center;
+    color: ivory;
+    font-size: 30px;
+    /* border: 2px solid orange; */
+    position: absolute;
+top: 2rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.createdAt{font-size: 13px;
+font-style: italic;
+}
+.userName {
+    padding-top: 4px;
+    font-size: 55px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: -webkit-linear-gradient(rgb(235, 115, 185), rgba(187, 226, 16, 0.89));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.chatWrapper{
+   width: 80vw;
+   background-image: url(https://glenboles.ca/wp-content/uploads/2017/09/web-1280_castle_mountain-2.jpg);
+   /* border: 2px solid orangered; */
+}
+.chatbox{
+       /* border: 2px solid orangered; */
+       text-align: center;
+
+}
+.chatboxInput{
+    width: 20rem;   
+}
+.chat-log{
+ margin: 0rem 20rem 0rem 20rem;
+ padding-left: 2rem;
+    border: 2px solid rgb(230, 222, 219);
+    height: 80vh;
+    background-color: rgba(146, 135, 137, 0.863);
+}       
+.chat-logItem{
+    /* border: 2px solid rgb(0, 0, 0); */
+    width: fit-content;
+    height: 3rem !important;
+}
+.wrapper{
+    display: flex;
+    /* border: 2px solid orange; */
+}
+
+.userhere{
+    color: rgb(163, 45, 100);
+}
+
+
+.ripple {
+    margin: 10px 10px 10px 10px ;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    background-position: center;
+    transition: background 0.8s;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .ripple:hover {
+    background: #eb0ac5 radial-gradient(circle, transparent 1%, #ca9cc3 1%) center/15000%;
   }
-  to {
-    transform: rotate(360deg);
+  .ripple:active {
+    background-color: #f76e80;
+    background-size: 100%;
+    transition: background 0s;
   }
-}
+  
+  /* Button style */
+  button {
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #990f70;
+    box-shadow: 0 0 2px #999;
+    outline: none;
+  }
+  
