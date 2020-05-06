@@ -8,7 +8,7 @@ import socketIOClient from "socket.io-client";
 const moment = require('moment');
 
 // const socket = socketIOClient("http://localhost:5000");
-const socket = socketIOClient("https://wingedpchatbox-be.herokuapp.com/ ");
+const socket = socketIOClient("https://wingedpchatbox-be.herokuapp.com/");
 
 
 
